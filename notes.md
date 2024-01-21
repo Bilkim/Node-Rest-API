@@ -45,14 +45,6 @@ To stop and remove containers  and also remove the volumes associated with the c
 docker compose down --volumes
 ```
 
-To the project locally without Docker:
-N/B - Ensure database host on development and test environment files is changed to *localhost* from *db*
-
-```
-npm install
-npm run dev
-npm run test
-```
 
 # Conclusion
 Sensitive information, such as database passwords, is handled securely using Docker secrets. This adds an extra layer of security in the production environment.
