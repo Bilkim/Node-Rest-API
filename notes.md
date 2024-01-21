@@ -5,12 +5,11 @@ Technology Stack  used include:
 Node.js, Express.js, Sequelize (ORM), PostgreSQL, Docker
 
 ## File directory
-controllers - Contains controllers for handling HTTP requests and business logic.
-middleware - Contains error handler.
-models - Sequelize model definitions for database entities.
-routes - Express.js route definitions.
-utils - Utility functions or helper modules.
-test - Test suite for API endpoints.
+* controllers - Contains controllers for handling HTTP requests and business logic.
+* middleware - Contains error handler.
+* models - Sequelize model definitions for database entities.
+* routes - Express.js route definitions.
+* test - Test suite for API endpoints.
 
 ## Database
 Database: PostgreSQL
