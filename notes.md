@@ -28,6 +28,12 @@ Node.js, Express.js, Sequelize (ORM), PostgreSQL, Docker
 **compose.yaml** Defines services (server and database) for development and testing.
 **.dockerignore** Files to be ignored during Docker image build.
 
+Endpoint to access the swagger docs:
+
+```
+http://localhost:3000/api-docs/
+```
+
 ```
 docker compose up --build
 docker compose run server npm run test
