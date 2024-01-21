@@ -12,20 +12,15 @@ Node.js, Express.js, Sequelize (ORM), PostgreSQL, Docker
 * test - Test suite for API endpoints.
 
 ## Database
-Database: PostgreSQL
-Models: Accounts, Cards
-ORM: Sequelize
-Migration: Sequelize migrations used for database schema evolution.
-
-## API Endpoints
-* /api/accounts
-* /api/cards
+* Database: PostgreSQL
+* Models: Accounts, Cards
+* ORM: Sequelize
 
 
 ## Testing
-Test Framework are Mocha and Chai
-Test cases include are CRUD operations on both accounts and cards.
-Environment: Separate test environment using Docker and a PostgreSQL database for testing.
+* Test Framework are Mocha and Chai
+* Test cases include are CRUD operations on both accounts and cards.
+* Environment: Separate test environment using Docker and a PostgreSQL database for testing.
 
 
 # Process for running the API on Docker
@@ -47,6 +42,9 @@ npm run dev
 npm run test
 ```
 
-
 # Conclusion
-The LoopDFS API is designed to provide a reliable and scalable solution for managing bank accounts and cards CRUD operations. It is well-suited for deployment in a production environment with the proper considerations for security, scalability, and monitoring.
+Sensitive information, such as database passwords, is handled securely using Docker secrets. This adds an extra layer of security in the production environment.
+
+The API uses environment variables to configure settings like the Node environment, database connection details, and others. This allows for easy configuration in different environments.
+
+The LoopDFS API is designed to provide a reliable and scalable solution for managing bank accounts and cards CRUD operations and it is well-suited for deployment in a production environment with the proper considerations for security, scalability, and monitoring.
