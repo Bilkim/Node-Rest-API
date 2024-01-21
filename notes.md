@@ -33,6 +33,12 @@ docker compose up --build
 docker compose run server npm run test
 ```
 
+To stop and remove containers  and also remove the volumes associated with the containers run:
+
+```
+docker compose down --volumes
+```
+
 To the project locally without Docker:
 N/B - Ensure database host on development and test environment files is changed to *localhost* from *db*
 
