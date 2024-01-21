@@ -19,8 +19,8 @@ ORM: Sequelize
 Migration: Sequelize migrations used for database schema evolution.
 
 ## API Endpoints
-/api/accounts
-/api/cards
+* /api/accounts
+* /api/cards
 
 
 ## Testing
