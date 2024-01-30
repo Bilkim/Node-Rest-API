@@ -1,0 +1,51 @@
+# Project Overview
+
+Technology Stack  used include:
+Node.js, Express.js, Sequelize (ORM), PostgreSQL, Docker
+
+## File directory
+* controllers - Contains controllers for handling HTTP requests and business logic.
+* middleware - Contains error handler.
+* models - Sequelize model definitions for database entities.
+* routes - Express.js route definitions.
+* test - Test suite for API endpoints.
+
+## Database
+* Database: PostgreSQL
+* Models: Accounts, Cards
+* ORM: Sequelize
+
+
+## Testing
+* Test Framework are Mocha and Chai
+* Test cases include are CRUD operations on both accounts and cards.
+* Environment: Separate test environment using Docker and a PostgreSQL database for testing.
+
+
+# Process for running the API on Docker
+**Dockerfile** Configurations for building the Docker image.
+**compose.yaml** Defines services (server and database) for development and testing.
+**.dockerignore** Files to be ignored during Docker image build.
+
+Endpoint to access the swagger docs:
+
+```
+http://localhost:3000/api-docs/
+```
+
+```
+docker compose up --build
+docker compose run server npm run test
+```
+
+To stop and remove containers  and also remove the volumes associated with the containers run:
+
+```
+docker compose down --volumes
+```
+
+
+# Conclusion
+Sensitive information, such as database passwords, is handled securely using Docker secrets. This adds an extra layer of security in the production environment.
+
+The API uses environment variables to configure settings like the Node environment, database connection details, and others. This allows for easy configuration in different environments.
